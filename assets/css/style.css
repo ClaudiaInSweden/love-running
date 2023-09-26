@@ -30,28 +30,34 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
+
 h1 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 /* Unordered list menu */
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
-    border-bottom: 1px solid #3a3a3a; 
+    border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -63,17 +69,21 @@ nav {
     display: none;
     top: 100%
 }
+
 /* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 #nav-toggle {
     display: none;
 
 }
+
 /* Main content */
 main {
     background-color: lightblue;
@@ -89,6 +99,7 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -97,21 +108,26 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
+
     #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
 
     }
+
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
@@ -119,4 +135,10 @@ footer {
     }
 
 
+}
+/* Media query: Large devices (Laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
 }
