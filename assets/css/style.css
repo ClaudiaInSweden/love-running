@@ -322,6 +322,30 @@ main {
     column-count: 3;
 }
 
+/* Sign-up form for screens larger than 768px */
+#signup {
+    position: relative;
+    background-position: center;
+    
+}
+
+
+#signup-form {
+    position: absolute;
+    left: 10%;
+    top: 150px;
+    max-width: 400px;
+
+}
+
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
 }
 /* Media query: Large devices (Laptops and desktops (992px and up) */
 @media screen and (min-width: 992px) {
@@ -340,7 +364,6 @@ column-count: 4;
 /* Reasons section */
 @media screen and (min-width: 1200px) {
 
-    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
@@ -351,7 +374,7 @@ column-count: 4;
     }
 
     #benefits-image {
-        order: 0
+        order: 0;
     }
 
     #benefits-mental {
