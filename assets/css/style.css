@@ -347,6 +347,7 @@ main {
     background-color: #fafafa;
     color: #454b1b;
 }
+}
 /* Media query: Large devices (Laptops and desktops (992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
